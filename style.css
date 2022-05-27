@@ -1,0 +1,197 @@
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+body{background-color:ghostwhite;}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body,
+html {
+    font-size: 16px;}
+
+p {
+    color: black;
+    
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+h4 {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    line-height: 0.75em;
+}
+
+img {
+    border-color: black;
+    border: 2px solid;
+    width: 100%;
+}
+
+h3 {
+    line-height:0.9em;
+    padding-right: 3em;
+    padding-left: 3em;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+.dropdown {
+    color:orange
+}
+
+.image {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ iframe {
+        padding-right: 3.5em;
+        padding-left: 3.5em;
+        align-content: center;
+        width: 500px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    select {
+        display: block;
+        width: 60%;
+        padding:10px;
+        margin-left: 10px;
+        margin-right:10px;
+        margin-bottom:10px;
+    }
+
+
+.item {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+.item.active{
+        display: flex;
+    }
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/** code for map **/
+/** Container styles to keep content from becoming too wide or coming too close to
+* mobile edge */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/** Images are allowed to be a little wider when broken out into their own container */
+
+.container.image {
+    max-width: 800px;
+    padding: 0;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+.dot{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position:absolute;
+}
+
+#map:not(.active) {
+    top:20%;
+    left:31%;
+}
+
+
+.dot .inner,
+.dot .close {
+    display:none;
+}
+
+.pink{
+    background-color: rgba(240,161,175,0.65);
+}
+
+.annotate{
+    position: relative;
+}
+
+
+.dot.active {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.dot.active .inner,
+.dot.active .close {
+    display:block;
+}
+
+
+/*** set min width for photo ***/
+/** desktop view - display flex **/
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
