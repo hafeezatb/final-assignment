@@ -21,7 +21,7 @@ p {
     color: black;
     
     text-align: left;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     font-family: 'Nanum Myeongjo', serif;
     padding-left: 4em;
@@ -31,7 +31,7 @@ p {
 p.inner {
     color: white;
     
-    text-align: left;
+    text-align: center;
     font-weight: 700;
     font-size: 18px;
     font-family: 'Nanum Myeongjo', serif;
@@ -91,7 +91,8 @@ figcaption {
     text-align: center;
 }
 .dropdown {
-    color:orange
+    color:orange;
+    text-align: center;
 }
 
 .image {
@@ -117,26 +118,43 @@ figcaption {
         display: block;
         width: 60%;
         padding:10px;
-        margin-left: 10px;
+        margin-left: 15px;
         margin-right:10px;
         margin-bottom:10px;
+        
     }
 
+    p.filter{
+        font-size: 13px;
+        color:darkorange;
+        text-align: center;
+        font-weight: 600;
+    }
 
 .item {
         display: none;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap:wrap;
+        flex-basis: calc(50% - 10px);
     }
     
 .item.active{
         display: flex;
     }
-.container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 5px;
+
+
+.filter.section {
+background-color: whitesmoke;
+margin-right:1em;
+margin-left: 1em;
 }
+
+.heading{
+    text-align: center;
+}
+h2{
+    color:white
+}
+
 
 /** code for map **/
 /** Container styles to keep content from becoming too wide or coming too close to
@@ -149,12 +167,11 @@ figcaption {
     margin: 0 auto;
 }
 
-
 /** Images are allowed to be a little wider when broken out into their own container */
 
 .container.image {
     max-width: 800px;
-    padding: 0;
+    padding: 1em;
 }
 
 .container.image .caption,
@@ -175,12 +192,6 @@ figcaption {
     right:31%;
 }
 
-#brooklyn:not(.active) {
-    bottom:50%;
-    right:20%;
-}
-
-
 .dot .inner,
 .dot .close {
     display:none;
@@ -189,14 +200,10 @@ figcaption {
 /** All the dots **/
 .black{
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
-.pink{
-    background-color:pink;
-    opacity: 0.6;
-}
-
+/** end of dots **/
 .annotate{
     position: relative;
 }
